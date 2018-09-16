@@ -1,2 +1,1 @@
-# project
-eee
+Random color game
