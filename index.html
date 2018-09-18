@@ -1,11 +1,11 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Game</title> 
 <link rel="stylesheet" type="text/css" href="main.css">
-
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
 </head>
-<body onLoad="randomize()">
+<body >
 <div class="body">
  <div class="head">
  <h1>THE GAME</h1>        
@@ -13,25 +13,26 @@
  
 <div class="play">
     <div class="playbut">
-       <button>Start Game</button>
-       <span class="timer">Time :20 s</span>
-       <span class="output">
-       Score : <span id="sc">0</span>
-       </span>
+       <button class="startbut" onclick="countdown(),randomize(),enable()">Start Game</button>
+       <div class="timer">Time : <span id="sec">20</span></div>
+       <div class="output">
+       Score : <span id="sc">00</span>
+       </div>
     </div>
-    <div class="show">colour is&nbsp;<span id="colgen"></span></div>
+    <div class="show"><span id="colgen" class="abc">Color</span></div>
     <div class="colors">
         <center>
+            <div class="space"></div>
         <div class="grid">
-            <button id="1" class="gridel" onclick="check(1)"></button>
-            <button id="2" class="gridel" onclick="check(2)"></button>
-            <button id="3" class="gridel" onclick="check(3)"></button>
-            <button id="4" class="gridel" onclick="check(4)"></button>
-            <button id="5" class="gridel" onclick="check(5)"></button>
-            <button id="6" class="gridel" onclick="check(6)"></button>
-            <button id="7" class="gridel" onclick="check(7)"></button>
-            <button id="8" class="gridel" onclick="check(8)"></button>
-            <button id="9" class="gridel" onclick="check(9)"></button>
+            <button id="b1" class="gridel" onclick="check(1)">-color-</button>
+            <button id="b2" class="gridel" onclick="check(2)">-color-</button>
+            <button id="b3" class="gridel" onclick="check(3)">-color-</button><br>
+            <button id="b4" class="gridel" onclick="check(4)">-color-</button>
+            <button id="b5" class="gridel" onclick="check(5)">-color-</button>
+            <button id="b6" class="gridel" onclick="check(6)">-color-</button><br>
+            <button id="b7" class="gridel" onclick="check(7)">-color-</button>
+            <button id="b8" class="gridel" onclick="check(8)">-color-</button>
+            <button id="b9" class="gridel" onclick="check(9)">-color-</button>
         </div>
         </center>
     </div>
